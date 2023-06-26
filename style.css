@@ -1,0 +1,135 @@
+/*
+	Please add your custom CSS in this file. The hex codes for the colours are below.
+
+	Main text color (grey): #838383
+	Dark grey for the speech bubble at the top: #424242
+	Grey border colour for the main content area, and the buttons at the bottom: #DCDCDC
+	Orange colour for the highlighted "only 3 days left" text and the progress bar: #F15E33
+	The background for the part of the progress bar that isn't filled in: #FAFAFA
+	Buttons at the bottom: #838383
+	Green button: #00BE1C
+	Green button border: #01B21A
+	"Why give 50" link: #25A5D8
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 320px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+}
+
+.popup-arrow{
+  position: absolute;
+  bottom: 1px;
+  left: 85%;
+  transform: translateX(-50%);
+  border: solid transparent;
+  border-width: 10px;
+  border-top-color: #424242;
+  z-index: 1;
+}
+
+.popup-content {
+  background-color: #424242;
+  color: #FAFAFA;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.days-left{
+  color: #F15E33;
+}
+
+.prog-bar {
+    height: 20px;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.prog-indicator {
+  height: 100%;
+  background-color: #F15E33;
+}
+
+.prog-33 {
+  width: 70%;
+}
+
+.main{
+  justify-content: space-between;
+  width: 100%;
+  height: 65%;
+  border: 1px solid #DCDCDC;
+  padding: 15px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+::placeholder{
+  font-weight: bold;
+ font-size: 15px;
+}
+
+input[type=text], .btn-donate {
+  width: 48%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.btn-donate {
+  background-color: #00BE1C;
+  border: none;
+  border-radius: 4px;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+a {
+  position: relative;
+  top: 20px;
+  color:#3366CC;
+  text-decoration: none;
+  cursor: pointer;
+  font-style: italic;
+}
+
+a:visited {
+  color: blue;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 30px;
+  margin-top: 15px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  color:  #838383;
+}
